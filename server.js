@@ -67,7 +67,7 @@ const app = express();
 app.use(cors());
 
 // app.use(express.static(path.resolve(__dirname, './public')));
-app.use(express.static(path.resolve(__dirname, './build/static')));
+app.use(express.static(path.resolve(__dirname, './build')));
 // app.use(express.static(path.resolve(__dirname)));
 
 app.use(express.json());
