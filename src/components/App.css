@@ -1,0 +1,27 @@
+.App {
+  /*text-align: center;*/
+}
+
+.App__header {
+  color: #ea0c89;
+  text-align: center;
+  margin: 3vmin 0;
+}
+
+.header__link {
+  color: #c2c2c2;
+  margin: 0 1vmin;
+}
+.header__link:hover {
+  color: white;
+  text-decoration: none;
+}
+.header__link:focus {
+  color: white;
+  text-decoration: none;
+}
+
+.active {
+  color: white;
+  text-decoration: none;
+}
