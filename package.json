@@ -20,13 +20,17 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
   },
+
   "scripts": {
-    "start": "react-scripts start",
+    "start": "cross-env NODE_ENV=production node server.js",
+    "server": "nodemon server.js",
+    "client": "react-scripts start",
+    "dev": "cross-env NODE_ENV=development concurrently \"npm run server\" \"npm run client\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "serve": "nodemon server.js"
+    "eject": "react-scripts eject"
   },
+
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -47,6 +51,8 @@
   },
   "proxy": "http://localhost:5000",
   "devDependencies": {
+    "concurrently": "^6.0.0",
+    "cross-env": "^7.0.3",
     "nodemon": "^2.0.7"
   }
 }

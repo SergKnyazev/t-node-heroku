@@ -15,9 +15,9 @@ function App() {
         <h1 className='App__header'>Test -- Node -- Heroku</h1>
         <Header />
 
-        <Route path='/' exact component={Home} />
-        <Route path='/worktimes' component={WorkTimes} />
-        <Route path='/works' component={Works} />
+        <Route path='/' exact={true} component={ Home } />
+        <Route path='/worktimes' component={ WorkTimes } />
+        <Route path='/works' component={ Works } />
 
       </Container>
     </Router>
