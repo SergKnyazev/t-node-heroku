@@ -37,7 +37,7 @@ app.use(express.urlencoded({ extended: false }));
 
 // app.use(worksRouter);
 
-app.get('/works', async (req, res) => {
+app.get('/api/works', (req, res) => {
   try {
 
      let worksBackend = [];
@@ -76,7 +76,7 @@ app.get('/works', async (req, res) => {
     // await res.status(200).json(works)
   } catch (error) {
     console.log(error);
-    await res.status(400).json({message: `*** Error app.get to "/works" : ${error}`})
+    res.status(400).json({message: `*** Error app.get to "/api/works" : ${error}`})
   }
 })
 

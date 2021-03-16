@@ -8,7 +8,7 @@ const Works = () => {
 
   useEffect(() => {
     ;(async () => {
-      const response = await axios.get('/works');
+      const response = await axios.get('/api/works');
       const works = response.data;
       console.log(works);
       setWorks(works)
