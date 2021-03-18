@@ -2,12 +2,15 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import Logo from './Logo';
 
 const Header = () => {
   return (
     <Navbar collapseOnSelect expand='lg' bg="dark" variant='dark'>
       <Navbar.Brand>
-        <NavLink to='/' exact className='header__link'>Logo</NavLink>
+        <NavLink to='/' exact className='header__link'>
+          <Logo />
+        </NavLink>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls='responsive-navbar-nav' />
       <Navbar.Collapse id='responsive-navbar-nav'>
